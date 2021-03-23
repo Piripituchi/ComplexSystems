@@ -62,27 +62,28 @@ def draw_user_automata(automata):
     return img
 
 
-probe_state=[1,0,0,1,1,1,0,0,1,1,0,1,0,1,0,0,0,1,1,0,0,1,0,0,0]
-probe_state_1=[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]
-rule_array=decode_rules(30)
-t=50
-automata=create_automata(probe_state,rule_array,t)
-automata1=create_automata(probe_state_1,rule_array,t)
-plt.figure(figsize=(8,6))
+# probe_state=[1,0,0,1,1,1,0,0,1,1,0,1,0,1,0,0,0,1,1,0,0,1,0,0,0]
+# probe_state_1=[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0]
+# rule_array=decode_rules(30)
+# print(rule_array)
+# t=50
+# automata=create_automata(probe_state,rule_array,t)
+# automata1=create_automata(probe_state_1,rule_array,t)
+# plt.figure(figsize=(8,6))
 
-#plot 1:
+# #plot 1:
 
-plt.subplot(1, 2, 1)
-plt.imshow(automata, cmap="binary", aspect="equal")
-plt.title("RANDOM")
+# plt.subplot(1, 2, 1)
+# plt.imshow(automata, cmap="binary", aspect="equal")
+# plt.title("RANDOM")
 
-#plot 2:
+# #plot 2:
 
-plt.subplot(1, 2, 2)
-plt.imshow(automata1, cmap="binary", aspect="equal")
-plt.title("CADENA 1 EN MEDIO")
-plt.suptitle("AUTOMATAS CELULARES")
-plt.show()
+# plt.subplot(1, 2, 2)
+# plt.imshow(automata1, cmap="binary", aspect="equal")
+# plt.title("CADENA 1 EN MEDIO")
+# plt.suptitle("AUTOMATAS CELULARES")
+# plt.show()
 
 
 
