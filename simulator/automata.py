@@ -56,10 +56,17 @@ def create_automata(initial_state,rules,time):
         initial_state=ac_grid[t_state]
     return ac_grid
 
-def draw_user_automata(automata):
-    img=plt.imshow(automata, cmap="binary", aspect="equal")
-    plt.title("RANDOM")
-    return img
+def number_cells(automata):
+    res=[]
+    time,ring=automata.shape
+    for iteration in range(0,time):
+        count_cell=0
+        for cell in range(0,ring):
+            if automata[iteration][cell]==1:
+                count_cell+=1
+        res.append("t = "+str(iteration)+" ; cells = "+str(count_cell)+"\n")
+    return res
+
 
 
 # probe_state=[1,0,0,1,1,1,0,0,1,1,0,1,0,1,0,0,0,1,1,0,0,1,0,0,0]
@@ -68,6 +75,8 @@ def draw_user_automata(automata):
 # print(rule_array)
 # t=50
 # automata=create_automata(probe_state,rule_array,t)
+# a=number_cells(automata)
+# print(a)
 # automata1=create_automata(probe_state_1,rule_array,t)
 # plt.figure(figsize=(8,6))
 
