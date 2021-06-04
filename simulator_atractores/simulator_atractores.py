@@ -6,6 +6,11 @@ from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 import pygraphviz as pgv
 
+#sudo apt-get install graphviz pkg-config
+#sudo apt-get install graphviz libgraphviz-dev
+#pip3 install pygraphviz
+#sudo apt-get install graphviz graphviz-dev
+
 
 def decode_rules(n_rule):
     rules=[
